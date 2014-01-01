@@ -231,7 +231,7 @@
 #define WALL_CHAR		'#'
 #define DOOR_CHAR		'+'
 #define OPEN_DOOR_CHAR	'\''
-#define ASH_CHAR		'\''
+#define ASH_CHAR		'a'
 #define BONES_CHAR		','
 #define MUD_CHAR		','
 #define WEB_CHAR		']'
