@@ -234,7 +234,7 @@
 #define ASH_CHAR		'\''
 #define BONES_CHAR		','
 #define MUD_CHAR		','
-#define WEB_CHAR		':'
+#define WEB_CHAR		']'
 #define FOLIAGE_CHAR	'&'
 #define ALTAR_CHAR		'|'
 #define LEVER_CHAR      '/'
