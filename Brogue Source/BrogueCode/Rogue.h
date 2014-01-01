@@ -205,14 +205,14 @@
 #define LOZENGE_CHAR		0x29EB
 #define CROSS_PRODUCT_CHAR	0x2A2F
 
-#define CHAIN_TOP_LEFT		'\\'
-#define CHAIN_BOTTOM_RIGHT	'\\'
-#define CHAIN_TOP_RIGHT		'/'
-#define CHAIN_BOTTOM_LEFT	'/'
-#define CHAIN_TOP			'|'
-#define CHAIN_BOTTOM		'|'
-#define CHAIN_LEFT			'-'
-#define CHAIN_RIGHT			'-'
+#define CHAIN_TOP_LEFT		'2'
+#define CHAIN_BOTTOM_RIGHT	'3'
+#define CHAIN_TOP_RIGHT		'4'
+#define CHAIN_BOTTOM_LEFT	'1'
+#define CHAIN_TOP			'6'
+#define CHAIN_BOTTOM		'5'
+#define CHAIN_LEFT			'7'
+#define CHAIN_RIGHT			'8'
 
 #define BAD_MAGIC_CHAR		0x29F2
 #define GOOD_MAGIC_CHAR		0x29F3
