@@ -161,7 +161,7 @@
 #define ASH_CHAR		'\''
 #define BONES_CHAR		','
 #define MUD_CHAR		','
-#define WEB_CHAR		':'
+#define WEB_CHAR		']'
 //#define FOLIAGE_CHAR	0x03A8 // lower-case psi
 #define FOLIAGE_CHAR	0x2648 // Aries symbol
 #define ALTAR_CHAR		'|'
@@ -206,9 +206,9 @@
 #define CROSS_PRODUCT_CHAR	0x2A2F
 
 #define CHAIN_TOP_LEFT		'2'
-#define CHAIN_BOTTOM_RIGHT	'3'
+#define CHAIN_BOTTOM_RIGHT	'1'
 #define CHAIN_TOP_RIGHT		'4'
-#define CHAIN_BOTTOM_LEFT	'1'
+#define CHAIN_BOTTOM_LEFT	'3'
 #define CHAIN_TOP			'6'
 #define CHAIN_BOTTOM		'5'
 #define CHAIN_LEFT			'7'
