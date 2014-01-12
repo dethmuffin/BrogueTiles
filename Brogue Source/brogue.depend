@@ -377,11 +377,11 @@
 	"IncludeGlobals.h"
 	<math.h>
 
-1388250888 source:c:\users\kimmer\documents\github\broguetiles\brogue source\broguecode\architect.c
+1389559229 source:c:\users\kimmer\documents\github\broguetiles\brogue source\broguecode\architect.c
 	"Rogue.h"
 	"IncludeGlobals.h"
 
-1388601664 c:\users\kimmer\documents\github\broguetiles\brogue source\broguecode\rogue.h
+1389557833 c:\users\kimmer\documents\github\broguetiles\brogue source\broguecode\rogue.h
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -414,7 +414,7 @@
 	"Rogue.h"
 	"IncludeGlobals.h"
 
-1388250888 source:c:\users\kimmer\documents\github\broguetiles\brogue source\broguecode\items.c
+1388605710 source:c:\users\kimmer\documents\github\broguetiles\brogue source\broguecode\items.c
 	"Rogue.h"
 	"IncludeGlobals.h"
 	<math.h>

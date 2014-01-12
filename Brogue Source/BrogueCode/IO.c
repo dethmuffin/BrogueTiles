@@ -3531,7 +3531,7 @@ void printDiscoveries(short category, short count, unsigned short itemCharacter,
 	for (i = 0; i < count; i++) {
 		if (theTable[i].identified) {
 			theColor = &white;
-			plotCharToBuffer(itemCharacter, x, y + i, &itemColor, &black, dbuf);
+			plotCharToBuffer(-itemCharacter, x, y + i, &itemColor, &black, dbuf); //ORYX
 		} else {
 			theColor = &darkGray;
 		}
