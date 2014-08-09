@@ -55,7 +55,7 @@ static void init_glyphTable()
 static void loadFont(int detectSize)
 {
 	char font[60];
-
+	
 	if (detectSize) {
 		int fontWidths[13] = {112, 128, 144, 160, 176, 192, 208, 224, 240, 256, 272, 288, 304}; // widths of the font graphics (divide by 16 to get individual character width)
 		int fontHeights[13] = {176, 208, 240, 272, 304, 336, 368, 400, 432, 464, 496, 528, 528}; // heights of the font graphics (divide by 16 to get individual character height)
@@ -79,7 +79,7 @@ static void loadFont(int detectSize)
 	}
 
 	sprintf(font, "fonts/font-%i.png", brogueFontSize);
-
+	
 	TCOD_console_set_custom_font(font, (TCOD_FONT_TYPE_GREYSCALE | TCOD_FONT_LAYOUT_ASCII_INROW), 0, 0);
 	TCOD_console_init_root(COLS, ROWS, "Brogue", false, renderer);
 
@@ -159,14 +159,14 @@ static void tcod_plotChar(uchar inputChar,
 
 	TCOD_color_t fore;
 	TCOD_color_t back;
-
+	
 	fore.r = (uint8) foreRed * 255 / 100;
 	fore.g = (uint8) foreGreen * 255 / 100;
 	fore.b = (uint8) foreBlue * 255 / 100;
 	back.r = (uint8) backRed * 255 / 100;
 	back.g = (uint8) backGreen * 255 / 100;
 	back.b = (uint8) backBlue * 255 / 100;
-
+	
 	if (inputChar == STATUE_CHAR) {
 		inputChar = 223;
 	} else if (inputChar > 255) {
@@ -290,7 +290,7 @@ static boolean processSpecialKeystrokes(TCOD_key_t k, boolean text) {
 	} else if ((k.vk == TCODK_PAGEUP
 				|| ((!text) && k.vk == TCODK_CHAR && (k.c == '=' || k.c == '+')))
 			   && brogueFontSize < 13) {
-
+		
 		if (isFullScreen) {
 			TCOD_console_set_fullscreen(0);
 			isFullScreen = 0;
@@ -375,7 +375,7 @@ static boolean processKeystroke(TCOD_key_t key, rogueEvent *returnEvent, boolean
 	if (processSpecialKeystrokes(key, text)) {
 		return false;
 	}
-
+	
 	returnEvent->eventType = KEYSTROKE;
 	getModifiers(returnEvent);
 	switch (key.vk) {
@@ -478,7 +478,7 @@ static boolean tcod_pauseForMilliseconds(short milliseconds)
 		bufferedKey = TCOD_console_check_for_keypress(TCOD_KEY_PRESSED);
 	}
 	#endif
-
+	
 	if (missedMouse.lmb == 0 && missedMouse.rmb == 0) {
 		mouse = TCOD_mouse_get_status();
 		if (mouse.lbutton_pressed || mouse.rbutton_pressed) {
@@ -488,7 +488,7 @@ static boolean tcod_pauseForMilliseconds(short milliseconds)
 			if (mouse.rbutton_pressed) missedMouse.rmb = MOUSE_DOWN;
 		}
 	}
-
+	
 	return (bufferedKey.vk != TCODK_NONE || missedMouse.lmb || missedMouse.rmb);
 }
 
@@ -508,10 +508,10 @@ static void tcod_nextKeyOrMouseEvent(rogueEvent *returnEvent, boolean textInput,
 	key.vk = TCODK_NONE;
 
 	if (noMenu && rogue.nextGame == NG_NOTHING) rogue.nextGame = NG_NEW_GAME;
-
+	
 	for (;;) {
 		theTime = TCOD_sys_elapsed_milli();
-
+		
 		if (TCOD_console_is_window_closed()) {
 			rogue.gameHasEnded = true; // causes the game loop to terminate quickly
 			rogue.nextGame = NG_QUIT; // causes the menu to drop out immediately
@@ -519,9 +519,9 @@ static void tcod_nextKeyOrMouseEvent(rogueEvent *returnEvent, boolean textInput,
 			returnEvent->param1 = ESCAPE_KEY;
 			return;
 		}
-
+		
 		tryAgain = false;
-
+		
 		if (bufferedKey.vk != TCODK_NONE) {
 			rewriteKey(&bufferedKey, textInput);
 			if (processKeystroke(bufferedKey, returnEvent, textInput)) {
@@ -531,7 +531,7 @@ static void tcod_nextKeyOrMouseEvent(rogueEvent *returnEvent, boolean textInput,
 				bufferedKey.vk = TCODK_NONE;
 			}
 		}
-
+		
 		if (missedMouse.lmb) {
 			returnEvent->eventType = missedMouse.lmb;
 
@@ -543,7 +543,7 @@ static void tcod_nextKeyOrMouseEvent(rogueEvent *returnEvent, boolean textInput,
 			if (TCOD_console_is_key_pressed(TCODK_SHIFT)) {
 				returnEvent->shiftKey = true;
 			}
-
+			
 			missedMouse.lmb = missedMouse.lmb == MOUSE_DOWN ? MOUSE_UP : 0;
 			return;
 		}
@@ -559,11 +559,11 @@ static void tcod_nextKeyOrMouseEvent(rogueEvent *returnEvent, boolean textInput,
 			if (TCOD_console_is_key_pressed(TCODK_SHIFT)) {
 				returnEvent->shiftKey = true;
 			}
-
+			
 			missedMouse.rmb = missedMouse.rmb == MOUSE_DOWN ? MOUSE_UP : 0;
 			return;
 		}
-
+		
 		if (!(serverMode || (SDL_GetAppState() & SDL_APPACTIVE))) {
 			TCOD_sys_sleep_milli(100);
 		} else {
@@ -735,7 +735,7 @@ static void tcod_remap(const char *input_name, const char *output_name) {
 	// find input and output in the list of tcod keys, if it's there
 	int i;
 	struct mapsymbol *sym = malloc(sizeof(*sym));
-
+	
 	if (sym == NULL) return; // out of memory?  seriously?
 
 	// default to treating the names as literal ascii symbols
@@ -760,7 +760,7 @@ static void tcod_remap(const char *input_name, const char *output_name) {
 			break;
 		}
 	}
-
+	
 	sym->next = keymap;
 	keymap = sym;
 }
