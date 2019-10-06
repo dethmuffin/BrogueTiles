@@ -1,14 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
+	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Release" />
-	<File name="BrogueCode\IO.c" open="1" top="1" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="PlatformCode\main.c" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="133440" topLine="3708" />
+			<Cursor1 position="5297" topLine="24" />
 		</Cursor>
 	</File>
-	<File name="BrogueCode\Light.c" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="BrogueCode\Architect.c" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="8034" topLine="253" />
+			<Cursor1 position="4320" topLine="113" />
+		</Cursor>
+	</File>
+	<File name="BrogueCode\Recordings.c" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="18968" topLine="659" />
+		</Cursor>
+	</File>
+	<File name="BrogueCode\Combat.c" open="0" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="52416" topLine="1419" />
+		</Cursor>
+	</File>
+	<File name="BrogueCode\Rogue.h" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="6824" topLine="178" />
+		</Cursor>
+	</File>
+	<File name="BrogueCode\IO.c" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="132799" topLine="3701" />
 		</Cursor>
 	</File>
 	<File name="BrogueCode\RogueMain.c" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -16,29 +37,29 @@
 			<Cursor1 position="22499" topLine="725" />
 		</Cursor>
 	</File>
-	<File name="BrogueCode\Recordings.c" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="PlatformCode\platformdependent.c" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="15603" topLine="659" />
+			<Cursor1 position="7519" topLine="35" />
 		</Cursor>
 	</File>
-	<File name="BrogueCode\Grid.c" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="PlatformCode\tcod-platform.c" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1375" topLine="167" />
+			<Cursor1 position="3338" topLine="78" />
 		</Cursor>
 	</File>
-	<File name="BrogueCode\Architect.c" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="BrogueCode\Light.c" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="4320" topLine="113" />
+			<Cursor1 position="8034" topLine="253" />
 		</Cursor>
 	</File>
-	<File name="BrogueCode\Items.c" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="BrogueCode\Items.c" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="32866" topLine="936" />
 		</Cursor>
 	</File>
-	<File name="PlatformCode\main.c" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="BrogueCode\Globals.c" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="5297" topLine="0" />
+			<Cursor1 position="232960" topLine="2361" />
 		</Cursor>
 	</File>
 	<File name="PlatformCode\platform.h" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -46,29 +67,9 @@
 			<Cursor1 position="422" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="PlatformCode\platformdependent.c" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="BrogueCode\Grid.c" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="7519" topLine="35" />
-		</Cursor>
-	</File>
-	<File name="PlatformCode\tcod-platform.c" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="3338" topLine="78" />
-		</Cursor>
-	</File>
-	<File name="BrogueCode\Rogue.h" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="26466" topLine="1082" />
-		</Cursor>
-	</File>
-	<File name="BrogueCode\Globals.c" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="232960" topLine="2361" />
-		</Cursor>
-	</File>
-	<File name="BrogueCode\Combat.c" open="0" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="52416" topLine="1419" />
+			<Cursor1 position="1375" topLine="167" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>
